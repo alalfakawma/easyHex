@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+@keyframes hexShow {
+  0%    {transform: scale(0);}
+  70%   {transform: scale(1.2);}
+  100%  {transform: scale(1);}
+}
+
+#wrapper {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+
+.hex-main svg {
+  display: block;
+}
+
+.hexAnimate {
+  display: block !important;
+  animation-name: hexShow;
+  animation-duration: .7s;
+}
+
+.hexAnimate svg {
+  display: block;
+} 
+
+.text {
+  text-transform: uppercase;
+  font-family: Comfortaa, sans-serif;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hex1, .hex2, .hex3, .hex4, .hex5, .hex6 {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  fill: #d5d5d5;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.hex1 {
+  top: 80%;
+  left: 47%;
+}
+
+.hex2 {
+  top: 80%;
+  left: -47%;
+}
+
+.hex3{
+  top: 0;
+  left: -94%;
+}
+
+.hex4 {
+  top: 0;
+  left: 93%;
+}
+
+.hex5 {
+  top: -80%;
+  left: -47%;
+}
+
+.hex6 {
+  top: -80%;
+  left: 47%;
+}
