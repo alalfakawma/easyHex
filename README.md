@@ -16,6 +16,11 @@ First create a div with a class of hexCont, and inside another div that you want
 		<div id="hexagon"></div>
 	</div>
 
+And target the hexagon from the createHex. Eg - 
+
+	var getHex = document.getElementsById('hexagon');
+	createHex(getHex, 50, 50, '#874d4d', '#874d4d', null, '#a7c692', true, null, true, null, true, null);
+
 *createHex(element, parentSize, childSize, childCol, parentCol, all, clickColor, first, second, third, fourth, fifth, sixth)*
 
 * element = the element id/class, etc where you want the menu to be.
