@@ -20,7 +20,7 @@ First create a div with a class of hexCont, and inside another div that you want
 - You can also use childNodes[] array to access the ones inside the sub-menus, which makes it easier. Like hexes[1].childNodes[2].
 - When referring to childNodes, always start from 2, since 0 is the SVG hex, and 1 is the Text class div.
 
-	*createHex(element, parentSize, childSize, childCol, parentCol, all, clickColor, first, second, third, fourth, fifth, sixth)*
+    *createHex(element, parentSize, childSize, childCol, parentCol, all, clickColor, first, second, third, fourth, fifth, sixth)*
 
 * element = the element id/class, etc where you want the menu to be.
 * parentSize = the size of the main Hexagon.
