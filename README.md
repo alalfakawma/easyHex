@@ -20,15 +20,6 @@ First create a div with a class of hexCont, and inside another div that you want
 - You can also use childNodes[] array to access the ones inside the sub-menus, which makes it easier. Like hexes[1].childNodes[2].
 - When referring to childNodes, always start from 2, since 0 is the SVG hex, and 1 is the Text class div.
 
-And target the hexagon from the createHex. Eg - 
-
-	var getHex = document.getElementsById('hexagon');
-	createHex(getHex, 50, 50, '#874d4d', '#874d4d', null, '#a7c692', true, null, true, null, true, null);
-
-Or the short version to get all 6 sub-menus
-
-	createHex(getHex, 50, 50, '#874d4d', '#874d4d', true);
-
 	*createHex(element, parentSize, childSize, childCol, parentCol, all, clickColor, first, second, third, fourth, fifth, sixth)*
 
 * element = the element id/class, etc where you want the menu to be.
@@ -39,6 +30,15 @@ Or the short version to get all 6 sub-menus
 * all = (true/false) - true will show all hexagons.
 * clickColor = the color of the hexagon when clicked.
 * first, second, third, fourth, fifth, sixth = (true/false) - set all to false if you intend on using this. This will specify specific positions of the hexagon child.
+
+Target the hexagon from the createHex. Eg - 
+
+	var getHex = document.getElementsById('hexagon');
+	createHex(getHex, 50, 50, '#874d4d', '#874d4d', null, '#a7c692', true, null, true, null, true, null);
+
+Or the short version to get all 6 sub-menus
+
+	createHex(getHex, 50, 50, '#874d4d', '#874d4d', true);
 
 In order to add text or any HTML element inside the Hexagons, you can use the *text()* function.
 
