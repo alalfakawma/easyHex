@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 @keyframes hexShow {
@@ -11,16 +12,18 @@
 }
 
 #wrapper {
-  display: inline-block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-50%);
+  top: 40%;
+  right: 50%;
 }
 
-.hex-main svg {
-  display: block;
+.hexCont {
+  display: inline-block;
+  position: relative;
+}
+
+.hexCont svg {
+  cursor: pointer;
 }
 
 .hexAnimate {
@@ -29,10 +32,6 @@
   animation-duration: .7s;
 }
 
-.hexAnimate svg {
-  display: block;
-} 
-
 .text {
   text-transform: uppercase;
   font-family: Comfortaa, sans-serif;
@@ -40,7 +39,13 @@
   width: 100%;
   text-align: center;
   top: 50%;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 20px;
   transform: translateY(-50%);
+  cursor: pointer;
+  font-weight: 700;
 }
 
 .hex1, .hex2, .hex3, .hex4, .hex5, .hex6 {
@@ -49,10 +54,6 @@
   width: 50px;
   height: 50px;
   fill: #d5d5d5;
-}
-
-svg {
-  cursor: pointer;
 }
 
 .hex1 {
