@@ -17,3 +17,7 @@ createHex(element, parentSize, childSize, childCol, parentCol, all, clickColor, 
 * all = (true/false) - true will show all hexagons.
 * clickColor = the color of the hexagon when clicked.
 * first, second, third, fourth, fifth, sixth = (true/false) - set all to false if you intend on using this. This will specify specific positions of the hexagon child.
+
+
+# Have not implemented text feature for menu text.
+# also parentSize and childSize should be same for now, need some math for the workaround which I can't think of yet.
