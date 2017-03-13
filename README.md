@@ -1,4 +1,7 @@
 # easyHex
+
+Live Demo - http://alalfakawma.in/hexmenu/
+
 Easy Chain Hex Menu Builder
 
 Have not minified it yet, still in building stage.
