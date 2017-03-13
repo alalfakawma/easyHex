@@ -7,7 +7,13 @@ Import it to your html file
 
 You can use the function createHex to create the Hexagonal Menu.
 
-createHex(element, parentSize, childSize, childCol, parentCol, all, clickColor, first, second, third, fourth, fifth, sixth)
+First create a div with a class of hexCont, and inside another div that you want the hexagons to be on
+
+    <div class="hexCont">
+		<div id="hexagon"></div>
+	</div>
+
+*createHex(element, parentSize, childSize, childCol, parentCol, all, clickColor, first, second, third, fourth, fifth, sixth)*
 
 * element = the element id/class, etc where you want the menu to be.
 * parentSize = the size of the main Hexagon.
