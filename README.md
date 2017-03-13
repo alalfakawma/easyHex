@@ -29,7 +29,7 @@ Or the short version to get all 6 sub-menus
 
 	createHex(getHex, 50, 50, '#874d4d', '#874d4d', true);
 
-*createHex(element, parentSize, childSize, childCol, parentCol, all, clickColor, first, second, third, fourth, fifth, sixth)*
+	*createHex(element, parentSize, childSize, childCol, parentCol, all, clickColor, first, second, third, fourth, fifth, sixth)*
 
 * element = the element id/class, etc where you want the menu to be.
 * parentSize = the size of the main Hexagon.
@@ -40,9 +40,9 @@ Or the short version to get all 6 sub-menus
 * clickColor = the color of the hexagon when clicked.
 * first, second, third, fourth, fifth, sixth = (true/false) - set all to false if you intend on using this. This will specify specific positions of the hexagon child.
 
-- In order to add text or any HTML element inside the Hexagons, you can use the *text()* function.
+In order to add text or any HTML element inside the Hexagons, you can use the *text()* function.
 
-*text(element, text, color, size, weight)*
+	*text(element, text, color, size, weight)*
 
 * element = the element id/class, etc where you want the menu to be in.
 * text = the text, in string form. You can use links, img, etc.
