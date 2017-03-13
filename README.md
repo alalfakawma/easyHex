@@ -42,6 +42,8 @@ Or the short version to get all 6 sub-menus
 
 In order to add text or any HTML element inside the Hexagons, you can use the *text()* function.
 
+- Create text's only after defining all hexagon sub-menus.
+
 	*text(element, text, color, size, weight)*
 
 * element = the element id/class, etc where you want the menu to be in.
