@@ -13,8 +13,10 @@ You can use the function createHex to create the Hexagonal Menu.
 First create a div with a class of hexCont, and inside another div that you want the hexagons to be on
 
     <div class="hexCont">
-	<div id="hexagon"></div>
+		.....
     </div>
+
+As long as you wrap your element with hexCont, it should work.
 
 - *ALL hexagons are stored in hexes[]*, which you can refer to after you add them in by hexes[index].
 - You can also use childNodes[] array to access the ones inside the sub-menus, which makes it easier. Like hexes[1].childNodes[2].
