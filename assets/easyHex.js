@@ -1,6 +1,7 @@
-// CREATE MAIN HEX CONTAINER
+// init var and arrays
 var hexes = [];
 var hexSVG;
+var clickTimes = 0;
 
 // create childs function
 
@@ -88,6 +89,7 @@ function changeColor(eleChange, childColor, parentColor) {
 
 function clickEvent(element, element2, clickColor) {
 	element.addEventListener('click', function() {
+		clickTimes++;
 		var parent = this.parentElement
 		for(var s = 2; s < parent.childNodes.length; s++) {
 			if (parent.childNodes[s].classList.contains('hexAnimate')) {
@@ -96,13 +98,14 @@ function clickEvent(element, element2, clickColor) {
 				element.childNodes[0].style.fill = '';
 			} else {
 				parent.childNodes[s].classList.add('hexAnimate');
-				parent.style.zIndex = '999';
+				parent.style.zIndex = clickTimes;
 				element.childNodes[0].style.fill = clickColor;
 			}
 		}
 	});
 
 	element2.addEventListener('click', function() {
+		clickTimes++;
 		var parent = this.parentElement
 		for(var s = 2; s < parent.childNodes.length; s++) {
 			if (parent.childNodes[s].classList.contains('hexAnimate')) {
@@ -111,7 +114,7 @@ function clickEvent(element, element2, clickColor) {
 				element.childNodes[0].style.fill = '';
 			} else {
 				parent.childNodes[s].classList.add('hexAnimate');
-				parent.style.zIndex = '999';
+				parent.style.zIndex = clickTimes;
 				element.childNodes[0].style.fill = clickColor;
 			}
 		}
