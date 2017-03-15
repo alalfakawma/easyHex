@@ -52,11 +52,12 @@ function hexSize(size, child) {
 }
 
 // add text to hex 
-function text(element, text, color, size, weight) {
+function text(element, text, color, size, weight, padding) {
 	element.childNodes[1].innerHTML += text;
 	element.childNodes[1].style.color = color;
 	element.childNodes[1].style.fontSize = size;
 	element.childNodes[1].style.fontWeight = weight;
+	element.childNodes[1].style.padding = padding;
 }
 
 // add textdiv to the hexes

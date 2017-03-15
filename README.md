@@ -46,13 +46,14 @@ In order to add text or any HTML element inside the Hexagons, you can use the *t
 
 - Create text's only after defining all hexagon sub-menus.
 
-	*text(element, text, color, size, weight)*
+	*text(element, text, color, size, weight, padding)*
 
 * element = the element id/class, etc where you want the menu to be in.
 * text = the text, in string form. You can use links, img, etc.
 * color = set text color.
-* size = text size (eg. '25px').
+* size = text size (eg. '25px') (default 16px).
 * weight = text weight (eg. '700').
+* padding = padding of the div text element (default 20px)
 
 Eg - 
 
