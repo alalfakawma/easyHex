@@ -1,6 +1,6 @@
 # easyHex
 
-Live Demo - http://alalfakawma.in/hexmenu/
+Live Demo - http://codepen.io/alalfakawma/pen/YZrQqW
 
 Easy Chain Hex Menu Builder
 

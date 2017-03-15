@@ -58,7 +58,9 @@ function text(element, text, color, size, weight, padding, cc) {
 	element.childNodes[1].style.fontSize = size;
 	element.childNodes[1].style.fontWeight = weight;
 	element.childNodes[1].style.padding = padding;
-	element.childNodes[1].className += ' ' + cc;
+	if (cc !== undefined) {
+		element.childNodes[1].className += ' ' + cc;
+	}
 }
 
 // add textdiv to the hexes
