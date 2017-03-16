@@ -4,8 +4,6 @@ Live Demo - http://codepen.io/alalfakawma/pen/YZrQqW
 
 Easy Chain Hex Menu Builder
 
-Have not minified it yet, still in building stage.
-
 Import it to your html file
 
 You can use the function createHex to create the Hexagonal Menu.
